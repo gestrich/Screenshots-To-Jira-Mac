@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CollectionViewItem" customModule="JiraSwiftMac" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bD6-Dz-eMY">
+                    <rect key="frame" x="0.0" y="23" width="480" height="249"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="g2J-hU-2H8"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fyz-Hd-GX2">
+                    <rect key="frame" x="-2" y="0.0" width="484" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="2Na-hc-Pzi"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" alignment="center" title="Label" id="vK7-f0-eww">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Fyz-Hd-GX2" secondAttribute="trailing" id="2Za-Q6-QhH"/>
+                <constraint firstItem="Fyz-Hd-GX2" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="HAs-Z7-tUG"/>
+                <constraint firstAttribute="trailing" secondItem="bD6-Dz-eMY" secondAttribute="trailing" id="LR9-8m-8Yd"/>
+                <constraint firstItem="bD6-Dz-eMY" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="Mup-Mb-wVb"/>
+                <constraint firstItem="bD6-Dz-eMY" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="NA3-xH-PVF"/>
+                <constraint firstItem="Fyz-Hd-GX2" firstAttribute="top" secondItem="bD6-Dz-eMY" secondAttribute="bottom" constant="3" id="U3N-UN-qfX"/>
+                <constraint firstAttribute="bottom" secondItem="Fyz-Hd-GX2" secondAttribute="bottom" id="xrC-KC-iXu"/>
+            </constraints>
+        </customView>
+        <collectionViewItem id="EUz-ac-KoP" customClass="CollectionViewItem" customModule="JiraSwiftMac" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="bD6-Dz-eMY" id="tiA-LO-OtZ"/>
+                <outlet property="textField" destination="Fyz-Hd-GX2" id="7jK-XK-GWd"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="XcV-EL-dwK"/>
+            </connections>
+        </collectionViewItem>
+    </objects>
+</document>

@@ -7,20 +7,99 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9276E6C21FCDA4200DEA01F /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9276E6B21FCDA4200DEA01F /* HeaderView.xib */; };
+		A9276E6E21FCDB2D00DEA01F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9276E6D21FCDB2D00DEA01F /* HeaderView.swift */; };
+		A98904C321FE518F006B2CEF /* JiraSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A98B2F7021F3FB41001297EF /* JiraSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A98B2F5621F3FA8F001297EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98B2F5521F3FA8F001297EF /* AppDelegate.swift */; };
-		A98B2F5821F3FA8F001297EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98B2F5721F3FA8F001297EF /* ViewController.swift */; };
+		A98B2F5821F3FA8F001297EF /* JiraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98B2F5721F3FA8F001297EF /* JiraViewController.swift */; };
 		A98B2F5A21F3FA90001297EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A98B2F5921F3FA90001297EF /* Assets.xcassets */; };
 		A98B2F5D21F3FA90001297EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A98B2F5B21F3FA90001297EF /* Main.storyboard */; };
+		A9A0105221F5142D0009AB17 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0105121F5142D0009AB17 /* ImageCollectionViewController.swift */; };
+		A9A0105521F517B30009AB17 /* CollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0105321F517B30009AB17 /* CollectionViewItem.swift */; };
+		A9A0105621F517B30009AB17 /* CollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A0105421F517B30009AB17 /* CollectionViewItem.xib */; };
+		A9A0105821F518160009AB17 /* ImageFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0105721F518160009AB17 /* ImageFile.swift */; };
+		A9A0105A21F5181F0009AB17 /* ImageDirectoryLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0105921F5181F0009AB17 /* ImageDirectoryLoader.swift */; };
+		A9A0105C21F51C670009AB17 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0105B21F51C670009AB17 /* WindowController.swift */; };
+		A9EF9F9D21FDDB95005B064F /* DirectoryMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EF9F9C21FDDB95005B064F /* DirectoryMonitor.swift */; };
+		A9EF9FA621FDFAD9005B064F /* ClickableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EF9FA521FDFAD9005B064F /* ClickableTextField.swift */; };
+		A9EF9FA821FE12C3005B064F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EF9FA721FE12C3005B064F /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A98904C421FE518F006B2CEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A98B2F6521F3FB41001297EF /* JiraSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = "JiraSwift::JiraSwift";
+			remoteInfo = JiraSwift;
+		};
+		A98B2F6D21F3FB41001297EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A98B2F6521F3FB41001297EF /* JiraSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "JiraSwift::JiraSwiftTests::Product";
+			remoteInfo = JiraSwiftTests;
+		};
+		A98B2F6F21F3FB41001297EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A98B2F6521F3FB41001297EF /* JiraSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "JiraSwift::JiraSwift::Product";
+			remoteInfo = JiraSwift;
+		};
+		A98B2F7121F3FB41001297EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A98B2F6521F3FB41001297EF /* JiraSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A977B8E0205E84C8005F61AF;
+			remoteInfo = "JiraSwift-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A98904C621FE518F006B2CEF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A98904C321FE518F006B2CEF /* JiraSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A98B2F8B21F3FEDF001297EF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A9276E6B21FCDA4200DEA01F /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		A9276E6D21FCDB2D00DEA01F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		A98B2F5221F3FA8F001297EF /* JiraSwiftMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JiraSwiftMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98B2F5521F3FA8F001297EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A98B2F5721F3FA8F001297EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A98B2F5721F3FA8F001297EF /* JiraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiraViewController.swift; sourceTree = "<group>"; tabWidth = 5; };
 		A98B2F5921F3FA90001297EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A98B2F5C21F3FA90001297EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A98B2F5E21F3FA90001297EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A98B2F5F21F3FA90001297EF /* JiraSwiftMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JiraSwiftMac.entitlements; sourceTree = "<group>"; };
+		A98B2F6521F3FB41001297EF /* JiraSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JiraSwift.xcodeproj; path = "Jira-Swift/JiraSwift.xcodeproj"; sourceTree = "<group>"; };
+		A9A0105121F5142D0009AB17 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
+		A9A0105321F517B30009AB17 /* CollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewItem.swift; sourceTree = "<group>"; };
+		A9A0105421F517B30009AB17 /* CollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewItem.xib; sourceTree = "<group>"; };
+		A9A0105721F518160009AB17 /* ImageFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFile.swift; sourceTree = "<group>"; };
+		A9A0105921F5181F0009AB17 /* ImageDirectoryLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDirectoryLoader.swift; sourceTree = "<group>"; };
+		A9A0105B21F51C670009AB17 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		A9EF9F9C21FDDB95005B064F /* DirectoryMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryMonitor.swift; sourceTree = "<group>"; };
+		A9EF9FA521FDFAD9005B064F /* ClickableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickableTextField.swift; sourceTree = "<group>"; };
+		A9EF9FA721FE12C3005B064F /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,11 +113,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9276E6121FCCC6F00DEA01F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A9A0105121F5142D0009AB17 /* ImageCollectionViewController.swift */,
+				A98B2F5721F3FA8F001297EF /* JiraViewController.swift */,
+				A9A0105B21F51C670009AB17 /* WindowController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A9276E6721FCCC7900DEA01F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9A0105321F517B30009AB17 /* CollectionViewItem.swift */,
+				A9276E6D21FCDB2D00DEA01F /* HeaderView.swift */,
+				A9EF9FA521FDFAD9005B064F /* ClickableTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A9276E6821FCCC7F00DEA01F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A9A0105721F518160009AB17 /* ImageFile.swift */,
+				A9A0105921F5181F0009AB17 /* ImageDirectoryLoader.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A9276E6921FCCCC100DEA01F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A9276E6B21FCDA4200DEA01F /* HeaderView.xib */,
+				A9A0105421F517B30009AB17 /* CollectionViewItem.xib */,
+				A98B2F5B21F3FA90001297EF /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		A98B2F4921F3FA8F001297EF = {
 			isa = PBXGroup;
 			children = (
 				A98B2F5421F3FA8F001297EF /* JiraSwiftMac */,
 				A98B2F5321F3FA8F001297EF /* Products */,
+				A98B2F6521F3FB41001297EF /* JiraSwift.xcodeproj */,
+				A98B2F7421F3FC05001297EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,14 +173,35 @@
 		A98B2F5421F3FA8F001297EF /* JiraSwiftMac */ = {
 			isa = PBXGroup;
 			children = (
+				A9276E6121FCCC6F00DEA01F /* Controllers */,
+				A9276E6721FCCC7900DEA01F /* Views */,
+				A9276E6821FCCC7F00DEA01F /* Models */,
+				A9276E6921FCCCC100DEA01F /* Resources */,
 				A98B2F5521F3FA8F001297EF /* AppDelegate.swift */,
-				A98B2F5721F3FA8F001297EF /* ViewController.swift */,
+				A9EF9F9C21FDDB95005B064F /* DirectoryMonitor.swift */,
+				A9EF9FA721FE12C3005B064F /* Utilities.swift */,
 				A98B2F5921F3FA90001297EF /* Assets.xcassets */,
-				A98B2F5B21F3FA90001297EF /* Main.storyboard */,
 				A98B2F5E21F3FA90001297EF /* Info.plist */,
 				A98B2F5F21F3FA90001297EF /* JiraSwiftMac.entitlements */,
 			);
 			path = JiraSwiftMac;
+			sourceTree = "<group>";
+		};
+		A98B2F6621F3FB41001297EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A98B2F6E21F3FB41001297EF /* JiraSwiftTests.xctest */,
+				A98B2F7021F3FB41001297EF /* JiraSwift.framework */,
+				A98B2F7221F3FB41001297EF /* JiraSwift_iOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A98B2F7421F3FC05001297EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,10 +214,13 @@
 				A98B2F4E21F3FA8F001297EF /* Sources */,
 				A98B2F4F21F3FA8F001297EF /* Frameworks */,
 				A98B2F5021F3FA8F001297EF /* Resources */,
+				A98B2F8B21F3FEDF001297EF /* Embed App Extensions */,
+				A98904C621FE518F006B2CEF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A98904C521FE518F006B2CEF /* PBXTargetDependency */,
 			);
 			name = JiraSwiftMac;
 			productName = JiraSwiftMac;
@@ -109,12 +253,42 @@
 			mainGroup = A98B2F4921F3FA8F001297EF;
 			productRefGroup = A98B2F5321F3FA8F001297EF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A98B2F6621F3FB41001297EF /* Products */;
+					ProjectRef = A98B2F6521F3FB41001297EF /* JiraSwift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A98B2F5121F3FA8F001297EF /* JiraSwiftMac */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A98B2F6E21F3FB41001297EF /* JiraSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = file;
+			path = JiraSwiftTests.xctest;
+			remoteRef = A98B2F6D21F3FB41001297EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A98B2F7021F3FB41001297EF /* JiraSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JiraSwift.framework;
+			remoteRef = A98B2F6F21F3FB41001297EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A98B2F7221F3FB41001297EF /* JiraSwift_iOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JiraSwift_iOS.framework;
+			remoteRef = A98B2F7121F3FB41001297EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A98B2F5021F3FA8F001297EF /* Resources */ = {
@@ -123,6 +297,8 @@
 			files = (
 				A98B2F5A21F3FA90001297EF /* Assets.xcassets in Resources */,
 				A98B2F5D21F3FA90001297EF /* Main.storyboard in Resources */,
+				A9A0105621F517B30009AB17 /* CollectionViewItem.xib in Resources */,
+				A9276E6C21FCDA4200DEA01F /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,12 +309,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A98B2F5821F3FA8F001297EF /* ViewController.swift in Sources */,
+				A9A0105A21F5181F0009AB17 /* ImageDirectoryLoader.swift in Sources */,
+				A9A0105221F5142D0009AB17 /* ImageCollectionViewController.swift in Sources */,
+				A9EF9FA821FE12C3005B064F /* Utilities.swift in Sources */,
+				A9A0105521F517B30009AB17 /* CollectionViewItem.swift in Sources */,
+				A9A0105C21F51C670009AB17 /* WindowController.swift in Sources */,
+				A98B2F5821F3FA8F001297EF /* JiraViewController.swift in Sources */,
 				A98B2F5621F3FA8F001297EF /* AppDelegate.swift in Sources */,
+				A9A0105821F518160009AB17 /* ImageFile.swift in Sources */,
+				A9EF9F9D21FDDB95005B064F /* DirectoryMonitor.swift in Sources */,
+				A9EF9FA621FDFAD9005B064F /* ClickableTextField.swift in Sources */,
+				A9276E6E21FCDB2D00DEA01F /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A98904C521FE518F006B2CEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JiraSwift;
+			targetProxy = A98904C421FE518F006B2CEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A98B2F5B21F3FA90001297EF /* Main.storyboard */ = {
@@ -270,8 +463,8 @@
 		A98B2F6321F3FA90001297EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = JiraSwiftMac/JiraSwiftMac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5K844XFC6W;
@@ -289,8 +482,8 @@
 		A98B2F6421F3FA90001297EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = JiraSwiftMac/JiraSwiftMac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5K844XFC6W;
